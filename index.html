@@ -3,19 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Your Name</title>
+    <title>Portfolio</title>
+    <!-- Link to external CSS file -->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- Hero section with name, title, resume download, and GitHub logo -->
     <header class="hero">
-      <h1>Your Name</h1>
+      <h1>Alexander Villafana</h1>
       <p>Fullstack Dev | Backend Dev | Student</p>
+
+      <!-- Button to download resume -->
       <a href="resume.pdf" class="btn" download>Download Resume</a>
+
+      <!-- GitHub Logo that links to GitHub profile -->
+      <div class="github-link">
+        <a href="https://github.com/avilla212" target="_blank">
+          <img src="logos/github.png" alt="GitHub" class="github-logo" />
+        </a>
+      </div>
     </header>
 
+    <!-- Tech Stack Section -->
     <section class="stack">
       <h2>Tech Stack</h2>
       <div class="stack-logos">
+        <!-- Tech stack logos, some with enlarged class -->
         <img src="logos/mongodb.png" alt="MongoDB" class="large-icon" />
         <img src="logos/express.png" alt="Express.js" />
         <img src="logos/react.png" alt="React" />
@@ -27,8 +40,70 @@
       </div>
     </section>
 
+    <section class="projects">
+      <h2>Projects & Accomplishments</h2>
+
+      <!-- Internal Company Website Project -->
+      <div class="project-card">
+        <h3>Internal Company Website</h3>
+        <p>
+          Developed and deployed a fullstack internal website for the company I
+          work for using <strong>Next.js</strong> and
+          <strong>Tailwind CSS</strong>. The site features a fully functioning
+          <strong>contact form</strong> integrated with
+          <strong>Nodemailer</strong> to handle employee inquiries and client
+          communication.
+        </p>
+        <a
+          href="https://github.com/your-repo/company-site"
+          target="_blank"
+          class="project-link"
+          >View on GitHub</a
+        >
+      </div>
+
+      <!-- Anniversary Web App Project -->
+      <div class="project-card">
+        <h3>Anniversary Web App</h3>
+        <p>
+          Built a fullstack experience planner for our two-year anniversary
+          using <strong>React</strong>, <strong>JavaScript</strong>, and the
+          <strong>Yelp API</strong>. A mock user login system was implemented
+          using a <strong>JavaScript hashmap</strong> and
+          <strong>plain text password</strong> validation to simulate user
+          authentication.
+        </p>
+        <a
+          href="https://github.com/your-repo/anniversary-app"
+          target="_blank"
+          class="project-link"
+          >View on GitHub</a
+        >
+      </div>
+
+      <!-- Chat App Project -->
+      <div class="project-card">
+        <h3>Barebones Chat Application</h3>
+        <p>
+          Created a minimal chat platform that handles <strong>users</strong>,
+          <strong>messages</strong>, and <strong>timestamps</strong>, with all
+          data stored and managed in <strong>MongoDB</strong>. Includes a
+          <strong>login system</strong> using <strong>bcrypt</strong> to
+          securely hash and compare user passwords.
+        </p>
+        <a
+          href="https://github.com/your-repo/chat-app"
+          target="_blank"
+          class="project-link"
+          >View on GitHub</a
+        >
+      </div>
+    </section>
+
+    <!-- Combined Profile and Contact section -->
     <section class="profile-contact">
       <div class="profile">
+        <!-- Personal photo and about me section -->
         <img src="jeff.jpg" alt="Your Name" class="profile-img" />
         <div class="about-text">
           <section class="about-text">
@@ -55,21 +130,31 @@
         </div>
       </div>
 
+      <!-- Contact Form Section -->
       <div class="contact">
         <h2>Contact Me</h2>
         <form id="contact-form">
-          <input type="text" placeholder="Your Name" required />
-          <input type="email" placeholder="Your Email" required />
-          <textarea placeholder="Your Message" required></textarea>
+          <!-- Hidden anti-bot field -->
+          <input
+            type="text"
+            id="nickname"
+            name="nickname"
+            style="display: none"
+            autocomplete="off"
+          />
+
+          <!-- Visible form fields -->
+          <input type="text" id="name" placeholder="Your Name" required />
+          <input type="email" id="email" placeholder="Your Email" required />
+          <textarea id="message" placeholder="Your Message" required></textarea>
+
+          <!-- Submit button -->
           <button type="submit">Send</button>
         </form>
       </div>
     </section>
 
-    <footer>
-      <a href="https://github.com/yourgithub" target="_blank">GitHub</a>
-    </footer>
-
+    <!-- Link to external JavaScript file -->
     <script src="script.js"></script>
   </body>
 </html>
