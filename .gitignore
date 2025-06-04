@@ -1,0 +1,22 @@
+# Node.js dependencies
+/backend/node_modules/
+
+# Environment variables
+/backend/.env
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS/system files
+.DS_Store
+Thumbs.db
+
+# IDE/editor settings
+.vscode/
+.idea/
+
+# Optional: ignore output folders if you later build anything
+/dist/
+/build/
+/out/
