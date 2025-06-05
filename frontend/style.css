@@ -20,7 +20,6 @@ section {
   padding: 0 1rem;
 }
 
-
 /* =============================
    Hero Section
 ============================= */
@@ -29,7 +28,6 @@ section {
   padding: 5rem 1rem 2rem; /* top right/left bottom */
   background-color: #f9f9f9;
 }
-
 
 .hero h1 {
   font-size: 2.5rem;
@@ -65,7 +63,6 @@ section {
 .btn:hover {
   background-color: #444;
 }
-
 
 /* =============================
    Skills Section
@@ -130,8 +127,6 @@ section {
   text-decoration: underline;
 }
 
-
-
 /* =============================
    Contact Form Section
 ============================= */
@@ -162,7 +157,6 @@ button[type="submit"]:hover {
   background-color: #333;
 }
 
-
 /* =============================
    Footer
 ============================= */
@@ -171,7 +165,6 @@ footer {
   padding: 2rem;
   background: #f2f2f2;
 }
-
 
 /* =============================
    Profile and Contact Layout
@@ -208,7 +201,6 @@ footer {
   flex: 1;
   min-width: 280px;
 }
-
 
 /* =============================
    Tech Stack Section
@@ -251,6 +243,34 @@ footer {
   width: 100px;
 }
 
+/* =============================
+   IT Skills Section
+============================= */
+.it-skills {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.it-skills h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.it-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.it-list li {
+  background: #f1f1f1;
+  padding: 0.75rem 1.25rem;
+  border-radius: 999px;
+  font-size: 0.95rem;
+}
 
 /* Responsive styles for screens smaller than 768px */
 @media (max-width: 768px) {
@@ -263,7 +283,8 @@ footer {
     align-items: center;
   }
 
-  .profile, .contact {
+  .profile,
+  .contact {
     width: 100%;
     padding: 1rem;
   }
@@ -273,11 +294,12 @@ footer {
     max-width: 250px;
   }
 
-  .about-text, .contact form {
+  .about-text,
+  .contact form {
     text-align: center;
   }
 
-   .project-card {
+  .project-card {
     padding: 1rem;
   }
 }
